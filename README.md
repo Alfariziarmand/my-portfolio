@@ -1,5 +1,5 @@
-## Welcome to my Github
+## Martabak Jepang Joni Brand Page
 
-### this is where my portfolio code showcase
+### Web developed by Armand and Designed by Muna Diya
 
-Please **check the branch** to look over my past project. I prefer react js for framework because its easy to apply logic in every component. More than that, i feel challenged to discover more in depth about react development
+Please report bugs or send suggestion to my email to armandfarizzi@gmail.com

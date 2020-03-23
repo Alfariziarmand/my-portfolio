@@ -1,0 +1,502 @@
+@font-face {
+  font-family: "museo";
+  src: url("./font/museo.woff");
+}
+@font-face {
+  font-family: "myFont2";
+  src: url("./font/ed.woff2");
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-item {
+  display: inline-block;
+  line-height: 83px;
+}
+body {
+  font-family: "myFont2";
+}
+.nav-list {
+  list-style: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.nav-logo img {
+  border-radius: 50%;
+  height: 100px;
+  width: auto;
+}
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  height: 83px;
+}
+.wa-link img {
+  width: 40px;
+  height: auto;
+}
+.wa-link p {
+  line-height: 40px;
+  /* color: white; */
+}
+.wa-link {
+  display: flex;
+  border-radius: 50%;
+  border: 3px solid #353c45;
+  padding: 10px 10px;
+  background: #f5e69a;
+  position: fixed;
+  /* width: 25px; */
+  /* height: auto; */
+  /* left: 0; */
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.32);
+  right: 0;
+  /* top: 0; */
+  bottom: 0;
+  color: #353c45;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+nav a {
+  color: inherit;
+}
+nav a:hover {
+  text-decoration: none;
+  color: #e68e94;
+}
+nav {
+  background-color: #490f11;
+  color: white;
+}
+#topsection {
+  /* height: calc(100vh); */
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #bc272b;
+}
+#midsection,
+#secondsection,
+#thirdsection {
+  min-height: 600px;
+}
+#fourthsection .header {
+  color: #fffaf1;
+  font-family: "museo";
+  text-align: right;
+}
+#fourthsection .row {
+  justify-content: center;
+}
+#fourthsection .photo-wrapper {
+  padding: 10px;
+  padding-bottom: 45px !important;
+  background-color: #faf1bd;
+  height: 100%;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
+  border: 10px solid transparent;
+}
+#fourthsection .header span {
+  border-top: 5px solid #350a0c;
+}
+#midsection {
+  background-color: #faf1bd;
+  display: flex;
+  align-items: center;
+}
+#midsection p,
+p.text {
+  text-align: justify;
+}
+#thirdsection .sideslogan {
+  text-align: right;
+}
+#thirdsection .sideslogan span {
+  background: #ffc824;
+}
+#thirdsection h1.brand-info {
+  font-size: 1.7rem;
+  letter-spacing: 3px;
+  text-align: center;
+}
+#thirdsection h1.header {
+  justify-content: end;
+  color: #bc272b;
+  font-family: "museo";
+}
+#thirdsection p.text {
+  /* line-height: 38px; */
+}
+#thirdsection p.slogan {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+#thirdsection h1.header {
+  text-align: right;
+}
+#midsection h1.header {
+  display: flex;
+}
+.icon {
+  width: 40px;
+}
+.center {
+  text-align: center;
+}
+#midsection .header span {
+  margin-left: auto;
+  border-top: 5px solid #353c45;
+  color: #bc272b;
+}
+#fourthsection {
+  background-color: #bc272b;
+  /* height: 600px; */
+}
+#lastsection span.header {
+  border-top: 5px solid #350a0c;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "museo";
+  color: #350a0c;
+  padding-top: 15px;
+  margin-top: 4px;
+}
+#lastsection {
+  background-color: #faf1bd;
+}
+#midsection .text,
+p.text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 35px;
+  /* font-family: sans-serif; */
+}
+#lastsection p {
+  margin-bottom: 0;
+}
+#extrasection {
+  background-color: #faf1bd;
+  border-right: 12px solid #bc272b;
+  border-left: 12px solid #bc272b;
+}
+#extrasection h1 {
+  font-weight: bold;
+  font-family: "museo";
+  color: #a01f24;
+}
+.menu-header {
+  text-align: center;
+  background-color: #f5e69a;
+  padding: 10px 0;
+  color: #bc272b;
+  font-family: "museo";
+}
+
+/* tablet queries */
+@media only screen and (max-width: 991px) and (min-width: 650px) {
+  #hidden-menu {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    font-size: 0.8rem;
+    width: max-content;
+    margin: 0 auto;
+  }
+  #secondsection .drink-card {
+    width: calc(47% - 100px) !important;
+  }
+  #topsection {
+    /* background-image: url("./img/Background.jpg"); */
+    /* background-color: #bc272b; */
+    /* background-position-y: px; */
+    /* background-attachment: fixed; */
+    background-position: bottom !important;
+    /* background-repeat: no-repeat; */
+    min-height: 400px !important ;
+    height: calc(100vh - 250px);
+    background-size: contain !important;
+  }
+  .brandtext {
+    margin: -150px auto 0 auto !important;
+  }
+}
+/* phone queries */
+@media only screen and (max-width: 425px) {
+  #expand-toggle:checked ~ #hidden-menu {
+    /* display: block!important;
+      position: absolute; */
+    /* display: flex!important; */
+    right: 0;
+    top: 0;
+    /* transition: all 0.2s; */
+  }
+  ul#hidden-menu {
+    background-color: #490f11;
+    border: 3px solid #faf1bd;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  ul#hidden-menu li:first-child {
+    padding-top: 45px;
+  }
+  .nav-item {
+    display: block;
+    line-height: 55px !important;
+  }
+  #expand-btn {
+    z-index: 1234;
+  }
+  #myhiddenmenu {
+    top: 0;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  #hidden-menu {
+    /* display: none; */
+    position: absolute;
+    right: calc(-100vw);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-out;
+    width: 55vw;
+    /* border-radius: 10px; */
+  }
+  .brandtext h1 {
+    font-size: 40px !important;
+    text-align: center;
+  }
+  .slogan-group .slogan {
+    font-size: 20px;
+    white-space: normal !important;
+  }
+  .brandtext p {
+    font-size: 18px !important;
+  }
+  #proposal .input-item {
+    max-width: 300px;
+  }
+  #topsection .brandtext {
+    margin: -100px auto 0 !important;
+  }
+  #secondsection .mycard {
+    width: calc(100% - 80px) !important;
+    margin: 0 auto;
+  }
+
+  #secondsection .drink-card {
+    width: calc(50% - 80px) !important;
+    margin: 0 auto;
+  }
+  #secondsection .drink-card li {
+    white-space: normal;
+  }
+  .nav-logo img {
+    height: 70px !important;
+    /* line-height: 83px; */
+    margin: auto auto;
+  }
+  .nav-logo {
+    display: flex;
+  }
+  #topsection {
+    /* background-image: url("./img/Background.jpg"); */
+    /* background-color: #bc272b; */
+    /* background-position-y: px; */
+    /* background-attachment: fixed; */
+    background-position: bottom !important;
+    /* background-repeat: no-repeat; */
+    min-height: 400px !important ;
+    height: calc(100vh - 550px);
+    background-size: contain !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  nav a {
+    font-size: 20px;
+  }
+  .brandtext h1 {
+    font-size: 51px;
+  }
+  #midsection .midsectioncontainer {
+    padding: 0 100px;
+  }
+  #secondsection .midsectioncontainer {
+    padding: 0 100px;
+  }
+  #fourthsection .midsectioncontainer {
+    padding: 0 100px;
+  }
+  #thirdsection .midsectioncontainer {
+    padding: 0 100px;
+  }
+  .card-border-b {
+    border-bottom: 12px solid #bc272b;
+  }
+  .card-border-r {
+    border-right: 12px solid #bc272b;
+  }
+  .card-border-t {
+    border-top: 12px solid #bc272b;
+  }
+  .card-border-l {
+    border-left: 12px solid #bc272b;
+  }
+  .drink-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .drink-card ul {
+    margin-top: auto;
+  }
+}
+
+#thirdsection .header span {
+  border-top: 5px solid #353c45;
+}
+#midsection .slogan {
+  color: #bc272b;
+  font-weight: bold;
+  font-size: 25px;
+  /* margin-bottom: ; */
+}
+#thirdsection {
+  background-color: #faf1bd;
+  display: flex;
+  align-items: center;
+}
+.myform {
+  background: #bc252a;
+  color: white;
+  flex-direction: column;
+}
+#proposal .input-item {
+  border: 2px solid rgba(55, 59, 77, 1);
+  display: block;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  padding-left: 40px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 100%;
+  /* min-width: 280px; */
+}
+#proposal .input-submit {
+  color: white;
+  background: black;
+  border: 0;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  /* margin-left: 70px; */
+  float: right;
+}
+.slogan-group .slogan {
+  white-space: nowrap;
+  float: right;
+  color: #f5e69a;
+}
+.slogan-group .slogan span {
+  border-bottom: 5px solid #fbff05;
+}
+/* #proposal { */
+/* width: 40%; */
+/* min-width: 280px; */
+/* } */
+#proposal .input-item::placeholder {
+  color: black;
+  font-style: italic;
+}
+#secondsection {
+  background: #bc272b;
+}
+#secondsection .header {
+  color: #faf1bd;
+  text-align: right;
+  font-family: "museo";
+  font-weight: bold;
+  margin: 15px 0;
+}
+#secondsection .header span {
+  border-top: 5px solid #350a0c;
+}
+.brandtext {
+  width: max-content;
+  margin: -400px auto 0 auto;
+  color: #faf1bd;
+}
+
+/* .mycard .img-fluid{ */
+/* border-radius: 50%; */
+/* box-shadow: 0.00px 1.00px 3px 0px rgba(0, 0, 0, 0.5); */
+/* border: 2px solid rgba(188, 39, 43, 1); */
+/* background-color: #f9f2bb; */
+
+/* } */
+.mycard ul,
+.drink-card ul,
+.food-card ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.mycard li,
+.drink-card li,
+.food-card li {
+  text-align: center;
+  font-family: "museo";
+  color: #f5e69a;
+  font-size: 18px;
+  white-space: nowrap;
+}
+.mycard li:first-child,
+.drink-card li:first-child,
+.food-card li:first-child {
+  font-size: 24px;
+}
+.brandtext {
+  font-family: "museo";
+  font-weight: 700;
+}
+.brandtext h1 {
+  font-size: 51px;
+  text-transform: uppercase;
+}
+.brandtext p {
+  font-size: 38px;
+  text-align: center;
+}
+.midsectioncontainer {
+  margin: 0 auto;
+}
+#secondsection .mycard {
+  width: calc(35% - 20px);
+}
+#secondsection .food-card {
+  width: calc(50%);
+  margin: 0 auto;
+}
+#secondsection .drink-card {
+  width: calc(26% - 80px);
+  /* height: 400px; */
+  /* display: flex;*/
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#topsection {
+  background-image: url("./img/Background.jpg");
+  background-color: #bc272b;
+  /* background-position-y: px; */
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
